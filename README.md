@@ -17,7 +17,8 @@ git clone https://github.com/yusanshi/handwriting-go-away-again
 cd handwriting-go-away-again
 ./handwriting/convert.sh demo.tex
 ```
+Then you'll get the [`output.pdf` file](https://github.com/yusanshi/handwriting-go-away-again/files/7259303/output.pdf).
 
 Usually you may want to copy `handwriting` directory to the directory where your TeX files are located, and run `./handwriting/convert.sh FILE.tex` in that directory.
 
-Note the `\input{handwriting/main.tex}` in `demo.tex`. Comment out that line to view the *original* look of the document. Uncomment it to have a quick view of the *handwritten* document, and when it looks good, run `./handwriting/convert.sh demo.tex` to get the final converted document.
+Note the `\input{handwriting/main.tex}` in `demo.tex`. Comment out that line to view the *original* look of the document. Uncomment it to have a quick view of the *handwritten* document, and when it looks good, run `convert.sh` to get the final converted document.

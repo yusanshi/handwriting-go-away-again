@@ -9,7 +9,7 @@ fi
 
 WORK_DIR="$(mktemp -d)"
 
-# Add "\input{handwriting/main.tex}"
+# Add "\input{handwriting/main.tex}" and remove labels in equations
 cat $1 | sed -e 's/\\input{handwriting\/main.tex}//g' | sed -e 's/\\begin{document}/\\input{handwriting\/main.tex}\n\\begin{document}/' | sed -e 's/{equation}/{equation\*}/g' > $WORK_DIR/main.tex
 cp -r handwriting $WORK_DIR
 
