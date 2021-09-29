@@ -1,9 +1,14 @@
+% Smaller page margin
 \usepackage[margin=0.8in]{geometry}
+
+% BIG, BIGGER, BIGGEST font
 \usepackage[fontsize=19pt]{scrextend}
 
+% Background image across all pages
 \usepackage{wallpaper}
 \CenterWallPaper{1.0}{handwriting/background.jpg}
 
+% Change text and math fonts
 % https://tex.stackexchange.com/a/453486/211175
 \defaultfontfeatures{Scale=0.8,Path=handwriting/fonts/}
 \setmathfont{GFSNeohellenicMath.otf}
@@ -18,6 +23,13 @@
 \usepackage{xeCJK}
 \setCJKmainfont[Scale=1]{杜慧田硬笔楷书简体.ttf}
 
+% Remove page numbers
 \pagenumbering{gobble}
 
+% Remove all indentations
 \setlength{\parindent}{0pt}
+
+% Use a not-so-black color
+\usepackage{xcolor}
+\definecolor{mygrey}{gray}{0.15}
+\color{mygrey}
